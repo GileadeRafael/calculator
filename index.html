@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <section id="calc">
+            <div class="panel">
+                <input type="text" disabled class="previewCalc"/>
+                    <div class="resultCalc">
+                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12.625C3 12.2798 3.27982 12 3.625 12H17.375C17.7202 12 18 12.2798 18 12.625C18 12.9702 17.7202 13.25 17.375 13.25H3.625C3.27982 13.25 3 12.9702 3 12.625Z" fill="#6B6B6B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7.625C3 7.27982 3.27982 7 3.625 7H17.375C17.7202 7 18 7.27982 18 7.625C18 7.97018 17.7202 8.25 17.375 8.25H3.625C3.27982 8.25 3 7.97018 3 7.625Z" fill="#6B6B6B"/>
+                        </svg></span>                    
+                        <input type="text" disabled class="result">
+                    </div>
+            </div>
+
+            <div class="keyboard">
+                <button class="button" onclick="del()">CE</button>
+                <button class="button" onclick="clr()">C</button>
+                <button class="button" onclick="calculate('%')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg></button>
+                <button class="button btnSecondary" onclick="calculate('/')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="1"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="1"></circle></svg></button>
+                <button class="button number" onclick="calculate(7)">7</button>
+                <button class="button number" onclick="calculate(8)">8</button>
+                <button class="button number" onclick="calculate(9)">9</button>
+                <button class="button btnSecondary" onclick="calculate('*')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+                <button class="button number" onclick="calculate(4)">4</button>
+                <button class="button number" onclick="calculate(5)">5</button>
+                <button class="button number" onclick="calculate(6)">6</button>
+                <button class="button btnSecondary" onclick="calculate('-')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
+                <button class="button number" onclick="calculate(1)">1</button>
+                <button class="button number" onclick="calculate(2)">2</button>
+                <button class="button number" onclick="calculate(3)">3</button>
+                <button class="button btnSecondary" onclick="calculate('+')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
+                <button class="button" onclick="round()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14"></path><path d="M5 10h14"></path><path d="M5 21h14"></path></svg></button>
+                <button class="button number" onclick="calculate(0)">0</button>
+                <button class="button" onclick="calculate('.')">,</button>
+                <button class="button btnSecondary" onclick="result()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="9" x2="19" y2="9"></line><line x1="5" y1="15" x2="19" y2="15"></line></svg></button>               
+            </div>
+        </section>    
+    </main>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
