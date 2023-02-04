@@ -24,5 +24,5 @@ function del(){
 }
 
 function round(){
-  res.value = res.value.tofixed(2);
+  res.value = res.value.toFixed(2);
 }
